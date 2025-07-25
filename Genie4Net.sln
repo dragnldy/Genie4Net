@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genie4Net", "Genie4Net\Genie4Net.csproj", "{B726EBD5-C82C-4724-AA15-842C4A8C1810}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genie4Lib", "Genie4Lib\Genie4Lib.csproj", "{56A249FB-72B2-44D2-B4A9-FECAFD97FBA1}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Plugins", "Plugins\Plugins.vbproj", "{CDE75ABB-0B4D-4753-A488-0EBE41975FEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B726EBD5-C82C-4724-AA15-842C4A8C1810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B726EBD5-C82C-4724-AA15-842C4A8C1810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B726EBD5-C82C-4724-AA15-842C4A8C1810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B726EBD5-C82C-4724-AA15-842C4A8C1810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56A249FB-72B2-44D2-B4A9-FECAFD97FBA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56A249FB-72B2-44D2-B4A9-FECAFD97FBA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56A249FB-72B2-44D2-B4A9-FECAFD97FBA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56A249FB-72B2-44D2-B4A9-FECAFD97FBA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDE75ABB-0B4D-4753-A488-0EBE41975FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE75ABB-0B4D-4753-A488-0EBE41975FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE75ABB-0B4D-4753-A488-0EBE41975FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE75ABB-0B4D-4753-A488-0EBE41975FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54CAC1B4-34F9-4777-AEF4-1C77D71FBC8A}
+	EndGlobalSection
+EndGlobal

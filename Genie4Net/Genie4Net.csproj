@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows10.0.26100.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <SupportedOSPlatformVersion>8.0</SupportedOSPlatformVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AssemblyName>Genie</AssemblyName>
+    <ApplicationIcon>Graphics\Taleweaver.ico</ApplicationIcon>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+    <Copyright>GPL-3</Copyright>
+    <AssemblyVersion>4.0.2.10</AssemblyVersion>
+    <FileVersion>4.0.2.10</FileVersion>
+    <Product>Genie Client 4</Product>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+    <WarningLevel>6</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+    <WarningLevel>6</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Graphics\Taleweaver.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Genie4Lib\Genie4Lib.csproj" />
+  </ItemGroup>
+
+</Project>
