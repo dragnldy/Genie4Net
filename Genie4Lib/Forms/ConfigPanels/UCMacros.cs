@@ -51,8 +51,8 @@ namespace GenieClient
                 ResetList();
                 foreach (DictionaryEntry de in m_MacroList)
                 {
-                    var li = ListViewBase.Items.Add(((Keys)Conversions.ToInteger(de.Key)).ToString());
-                    li.Tag = ((Keys)Conversions.ToInteger(de.Key)).ToString();
+                    var li = ListViewBase.Items.Add(((Keys)de.Key).ToString());
+                    li.Tag = ((Keys)de.Key).ToString();
                     li.SubItems.Add(((Genie.Macros.Macro)de.Value).sAction);
                 }
             }

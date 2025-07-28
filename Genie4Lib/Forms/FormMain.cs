@@ -40,7 +40,7 @@ namespace GenieClient
 
             // Add any initialization after the InitializeComponent() call.
             LocalDirectory.CheckUserDirectory();
-            bool bCustomConfigFile = false;
+            bool bCustomLayoutFile = false;
             var al = new ArrayList();
             al = Utility.ParseArgs(Emulators.Interaction.Command());
             foreach (string cmd in al)
@@ -50,7 +50,7 @@ namespace GenieClient
                     case "-l":
                     case "-layout":
                         {
-                            bCustomConfigFile = true;
+                            bCustomLayoutFile = true;
                             break;
                         }
 
@@ -70,7 +70,7 @@ namespace GenieClient
 
                     default:
                         {
-                            if (bCustomConfigFile == true)
+                            if (bCustomLayoutFile == true)
                             {
                                 if (m_sConfigFile.Length == 0)
                                 {
@@ -85,7 +85,7 @@ namespace GenieClient
                                         m_sConfigFile = m_oGlobals.Config.ConfigDir + @"\Layout\" + m_sConfigFile;
                                     }
 
-                                    bCustomConfigFile = false;
+                                    bCustomLayoutFile = false;
                                 }
                             }
 
@@ -95,7 +95,7 @@ namespace GenieClient
             }
 
             CreateGenieFolders();
-            if (bCustomConfigFile == false)
+            if (bCustomLayoutFile == false)
             {
                 m_sConfigFile = m_oGlobals.Config.ConfigDir + @"\Layout\" + "default.layout";
 

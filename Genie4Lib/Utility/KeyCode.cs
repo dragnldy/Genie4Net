@@ -172,18 +172,23 @@ namespace GenieClient.Genie
             Zoom = 251
         }
 
-        public static System.Windows.Forms.Keys StringToKey(string sHotkey)
+        public static Keys StringToKey(string sHotkey)
         {
             try
             {
-                return (System.Windows.Forms.Keys)Conversions.ToInteger(new KeysConverter().ConvertFromString(sHotkey));
+                return ConvertFromString(sHotkey);
             }
-            #pragma warning disable CS0168
+#pragma warning disable CS0168
             catch (Exception ex) // Unfortunately there is no specific error for convert errors.
-            #pragma warning restore CS0168
+#pragma warning restore CS0168
             {
                 return default;
             }
+        }
+        public static Keys ConvertFromString(string sHotKey)
+        {
+            Keys keyCode = (Keys)Enum.Parse(typeof(Keys), sHotKey);
+            return keyCode;
         }
     }
 }
